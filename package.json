@@ -1,18 +1,28 @@
 {
-  "name": "with-typescript-styled-components",
+  "name": "fitness-tracker",
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
+    "@prisma/client": "2.10.2",
+    "axios": "^0.21.0",
+    "firebase": "^7.15.5",
+    "firebase-admin": "^8.12.1",
+    "js-cookie": "2.2.1",
     "next": "latest",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
-    "styled-components": "^5.0.0"
+    "react-firebaseui": "4.1.0",
+    "styled-components": "^5.0.0",
+    "swr": "^0.3.9"
   },
   "devDependencies": {
+    "@prisma/cli": "2.10.2",
+    "@types/js-cookie": "^2.2.6",
     "@types/node": "12.0.12",
     "@types/react": "16.8.23",
     "@types/react-dom": "16.8.4",
